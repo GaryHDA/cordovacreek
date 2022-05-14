@@ -1,0 +1,18 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: titlepage
+
+parts:
+  - caption: Introduction
+    numbered: False
+    chapters:
+      - file: intro
+      - file: year_1
+      - file: survey_2022
+      - file: BRC
+      - file: scratch
+      
+      
+  
