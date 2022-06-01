@@ -1,9 +1,9 @@
  # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: CC_2
+title: The Cordova Creek Project
 author: Gary Hare
-logo: images/g227.png
+logo: resources/images/logo.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -17,9 +17,9 @@ latex:
     targetname: book.tex
 
 # Add a bibtex file so that we can create citations
-bibtex_bibfiles:
-  - references.bib
-  - ref_1.bib
+#bibtex_bibfiles:
+#  - references.bib
+#  - ref_1.bib
   
 # Information about where the book exists on the web
 repository:
@@ -34,9 +34,9 @@ html:
   use_repository_button: true
   extra_footer: |
     <p>
-       hammerdirt california, 2022
+       hammerdirt California, 2022
     </p>
 sphinx:
   config:
-    bibtex_reference_style: label
+#    bibtex_reference_style: label
     html_show_copyright: false
