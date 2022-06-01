@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The BRC: A Case for Catchment &#8212; CC_2</title>
+    <title>The BRC: A Case for Catchment &#8212; The Cordova Creek Project</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -37,22 +37,23 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="scratch.html" />
-    <link rel="prev" title="Survey_2022" href="survey_2022.html" />
+    <link rel="prev" title="Cordova Creek" href="year_1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -78,10 +79,10 @@
         
       
       
-      <img src="_static/g227.png" class="logo" alt="logo">
+      <img src="_static/logo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">CC_2</h1>
+      <h1 class="site-logo" id="site-title">The Cordova Creek Project</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -92,29 +93,14 @@
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="titlepage.html">
-   CC_2
+   The Cordova Creek Project
   </a>
  </li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Introduction
- </span>
-</p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="intro.html">
-   Introduction
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="year_1.html">
-   Measuring changes in litter density before and after restoration
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="survey_2022.html">
-   Survey_2022
+   Cordova Creek
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -168,7 +154,7 @@
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -202,48 +188,80 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#return-to-cordova-creek">
+   Return to Cordova Creek
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
     <div id="main-content" class="row">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>The BRC: A Case for Catchment</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#return-to-cordova-creek">
+   Return to Cordova Creek
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="the-brc-a-case-for-catchment">
 <h1>The BRC: A Case for Catchment<a class="headerlink" href="#the-brc-a-case-for-catchment" title="Permalink to this headline">¶</a></h1>
-<p>— The Beaver Relief Cleanup was an event hosted by Soil Born Farms(SBF), facilitated by SBF’s Groundskeeper, and executed by thirteen volunteers from the Sacramento Picks It Up group, in response to an accumulation of trash within, and along Cordova Creek’s(CC), headwaters on 03/20/2022.</p>
+<p>The Beaver Relief Cleanup was an event hosted by Soil Born Farms(SBF), facilitated by SBF’s Groundskeeper, and executed by thirteen volunteers from the Sacramento Picks It Up group, in response to an accumulation of trash within, and along Cordova Creek’s(CC), headwaters on 03/20/2022.</p>
 <p>This location continues to collect such items as: rubber balls, snack packaging, tobacco products, plastic, metal and glass drink bottles, office furniture, wheels, shoes and clothing(just to name a few), as they become entangled with willow branches and stranded on dry land.</p>
-<div class="figure align-default" id="headwaters">
-<a class="reference internal image-reference" href="_images/headwaters.jpg"><img alt="_images/headwaters.jpg" src="_images/headwaters.jpg" style="height: 250px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Looking downstream at the head of CC currently(2022), where debris and trash are loitering.</span><a class="headerlink" href="#headwaters" title="Permalink to this image">¶</a></p>
-</div>
 <div class="figure align-default" id="extendedstrandline">
 <a class="reference internal image-reference" href="_images/extendedstrandline.jpg"><img alt="_images/extendedstrandline.jpg" src="_images/extendedstrandline.jpg" style="height: 250px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">The view upon arrival, as a previous rain event had distributed trash/debris onto the creek bank.</span><a class="headerlink" href="#extendedstrandline" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">The view upon arrival, as a previous rain event had distributed trash/debris onto the creek bank.</span><a class="headerlink" href="#extendedstrandline" title="Permalink to this image">¶</a></p>
 </div>
 <p>One reason for the trash concentration here may be that it is where the concrete lined storm drain ends and CC begins, so trash flows from places upstream unimpeded until it hits the naturalized zone, where during heavy rain events, some is caught in the brush or stranded above the waterline.</p>
-<div class="figure align-default" id="cliftonscorner">
-<a class="reference internal image-reference" href="_images/cliftonscorner.jpg"><img alt="_images/cliftonscorner.jpg" src="_images/cliftonscorner.jpg" style="height: 250px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">An early pic from 2015.</span><a class="headerlink" href="#cliftonscorner" title="Permalink to this image">¶</a></p>
-</div>
 <div class="figure align-default" id="cornercut">
 <a class="reference internal image-reference" href="_images/cornercut_1_23_2016.jpg"><img alt="_images/cornercut_1_23_2016.jpg" src="_images/cornercut_1_23_2016.jpg" style="height: 250px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">A “Before” shot of the location in early 2016, as the CC Naturalization project was just underway.</span><a class="headerlink" href="#cornercut" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">A “Before” shot of the location in early 2016, as the CC Naturalization project was just underway.</span><a class="headerlink" href="#cornercut" title="Permalink to this image">¶</a></p>
 </div>
-<p>Historically, a portion of this trash had been washed down to the confluence of CC and the Lower American River.</p>
-<div class="figure align-default" id="gh2">
-<a class="reference internal image-reference" href="_images/gh_2.jpg"><img alt="_images/gh_2.jpg" src="_images/gh_2.jpg" style="height: 250px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">The work being done a few years back at the confluence.</span><a class="headerlink" href="#gh2" title="Permalink to this image">¶</a></p>
-</div>
-<p>—Within a year after the completion of Phase 2 of the CC Nat project, Nature moved in and began to contribute to the endeaver.</p>
+<p>Within a year after the completion of Phase 2 of the CC Nat project, Nature moved in and began to contribute to the endeaver.</p>
 <div class="figure align-default" id="cldam-3-17-2019">
 <a class="reference internal image-reference" href="_images/cldam_3_17_2019.jpg"><img alt="_images/cldam_3_17_2019.jpg" src="_images/cldam_3_17_2019.jpg" style="height: 400px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Beavers getting right to it.</span><a class="headerlink" href="#cldam-3-17-2019" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Beavers getting right to it.</span><a class="headerlink" href="#cldam-3-17-2019" title="Permalink to this image">¶</a></p>
 </div>
 <hr class="docutils" />
+<div class="section" id="return-to-cordova-creek">
+<h2>Return to Cordova Creek<a class="headerlink" href="#return-to-cordova-creek" title="Permalink to this headline">¶</a></h2>
+<p>Samples were collected in the first two months of 2022. The same protocol was used at the original survey boundary from the first Cordova Creek project. These samples were both below the median value from 2017.</p>
+<div class="figure align-default" id="brcbag1">
+<a class="reference internal image-reference" href="_images/brcbag1.jpg"><img alt="_images/brcbag1.jpg" src="_images/brcbag1.jpg" style="height: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Trash colleceted by volunteers at BRC</span><a class="headerlink" href="#brcbag1" title="Permalink to this image">¶</a></p>
+</div>
+<p>Results from the BRC in March 2022 demonstrated an accumulation of debris upstream of the survey site. Suggesting that the nature area is fulfilling its role.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -268,42 +286,33 @@
 
               </div>
               
-        
-            <!-- Previous / next buttons -->
+            
+                <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="survey_2022.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="year_1.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Survey_2022</p>
+            <p class="prev-next-title">Cordova Creek</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="scratch.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
-        
+            
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Gary Hare<br/>
-        
-          <div class="extra_footer">
-            <p>
-   hammerdirt california, 2022
+  <p>
+    
+      By Gary Hare<br/>
+    
+      <div class="extra_footer">
+        <p>
+   hammerdirt California, 2022
 </p>
 
-          </div>
-      </p>
-    </div>
-  </footer>
+      </div>
+  </p>
+</footer>
 </main>
 
 
