@@ -1,4 +1,5 @@
-# The BRC: A Case for Catchment
+# The Beaver Relief Cleanup
+## An effort to reduce pollution in a naturalized ecosystem
   
 The Beaver Relief Cleanup was an event hosted by Soil Born Farms(SBF), facilitated by SBF's Groundskeeper, and executed by thirteen volunteers from the Sacramento Picks It Up group, in response to an accumulation of trash within, and along Cordova Creek's(CC), headwaters on 03/20/2022.
 

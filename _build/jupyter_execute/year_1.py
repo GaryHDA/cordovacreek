@@ -231,11 +231,18 @@ plt.tight_layout()
 plt.close()
 
 
-# In[ ]:
-
-
-
-
+# ## Discussion
+# 
+# The use of litter data gathered by observations to assess compliance with State Water Resources Control Board resolution 2015-2019 (SWRCB, 2015-0019) was considered by connely et all in 2016. In this study observations were taken from a moving vehichle throughout the city salinas.  The observations were considered using Bayesian uncertaintiy estimation to produce a geographic representation of the magnitude of the observations by some measureing unit. Recently different protocols were considered in the San Francisc bay to qauntify trash in recieveing waters. In the context of (SWRCB, 2015-0019) the presence and the density of litter in recieveing waters is an essential element to understanding and mitigating the problem.
+# 
+# The goal of monitoring is to assess the changes over time, litter monitoring is one way to accmoplish that goal with respect to (SWRCB, 2015-0019). Litter data gathered by volunteers in Europe over one year was used to establish the current threshhold value of 15 pieces of trash per 100 meters for european beaches. Cordova Creek I (2015 - 2017) had a median value of 5.2 pieces/meter. It is likely that the CCNP had a beneficial effect on the transfer of trash to reciveing waters given that the  samples taken in January and February 2022 were both lower than the baseline in CCI.
+# 
+# 
+# The final phase of CCNP (scheduled 2024-2025) is an opportunity to compare the changes over time in litter density from 2017 - 2022 in the context of the SWRCB, 2015-0019. Furthermore, it is an opportunity to measure beneficial(trash capture) effects of the (CCNP) project design of the confluence both before, and after final phase implementation.
+# 
+# 
+# 
+# 
 
 # In[ ]:
 
