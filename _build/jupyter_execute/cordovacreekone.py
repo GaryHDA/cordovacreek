@@ -37,7 +37,7 @@ from IPython.display import Image
 # 
 # ## Monitoring aquatic litter
 # 
-# In 2015 we began a project with a goal to quantify the debris flowing to the American River and one of its tributaries: Cordova Creek. The surveys followed the protocol described in _The Guide for Monitoriing litter on European seas_ :
+# In 2015 we began a project with a goal to quantify the debris flowing to the American River and one of its tributaries: Cordova Creek. The surveys followed the protocol described in _The Guide for Monitoriing litter on European seas_ {cite}`mlwguidance`:
 # 
 # 1. Take pictures of location, including visible debris present
 # 2. Note location, date, length of survey area
