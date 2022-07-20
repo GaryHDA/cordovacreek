@@ -1,5 +1,5 @@
- # Book settings
-# Learn more at https://jupyterbook.org/customize/config.html
+# Book settings
+
 
 title: The Cordova Creek Project
 author: Gary Hare
@@ -17,9 +17,9 @@ latex:
     targetname: book.tex
 
 # Add a bibtex file so that we can create citations
-#bibtex_bibfiles:
-#  - references.bib
-#  - ref_1.bib
+bibtex_bibfiles:
+   - references.bib
+ # - ref_1.bib
   
 # Information about where the book exists on the web
 repository:
@@ -38,5 +38,5 @@ html:
     </p>
 sphinx:
   config:
-#    bibtex_reference_style: label
+    bibtex_reference_style: label
     html_show_copyright: false

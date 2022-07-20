@@ -1,13 +1,12 @@
 # Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
 root: titlepage
 
 chapters:
-  - file: year_1
-  - file: BRC
-  - file: year_1v2   
-      
+  - file: cordovacreekone  
+  - file: BRC   
+  - file: references
+  
       
   
