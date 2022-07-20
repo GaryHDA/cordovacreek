@@ -53,8 +53,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="The Beaver Relief Cleanup" href="BRC.html" />
-    <link rel="prev" title="The Cordova Creek Project" href="titlepage.html" />
+    <link rel="prev" title="The Beaver Relief Cleanup" href="BRC.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -99,8 +98,8 @@
  </li>
 </ul>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="year_1.html">
    Cordova Creek
   </a>
  </li>
@@ -109,8 +108,8 @@
    The Beaver Relief Cleanup
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="year_1v2.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Cordova Creek
   </a>
  </li>
@@ -155,7 +154,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/year_1.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/year_1v2.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -175,7 +174,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/GaryHDA/cordovacreek/issues/new?title=Issue%20on%20page%20%2Fyear_1.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/GaryHDA/cordovacreek/issues/new?title=Issue%20on%20page%20%2Fyear_1v2.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -196,7 +195,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/GaryHDA/cordovacreek/main?urlpath=tree/docs/year_1.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/GaryHDA/cordovacreek/main?urlpath=tree/docs/year_1v2.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -295,6 +294,7 @@
 <li><p>Once all items have been documented dispose, or recycle</p></li>
 </ol>
 <p>Surveys were conducted weekly on Wednesday morninging and anounced via social media in advance. The surveyor maintained a blog with an entry for most surveys <a class="reference external" href="https://hammerdirtriverbend.blogspot.com">hammerdirt at riverbend</a>.</p>
+<p><strong>Figure 1:</strong> Aerial image of the CCNP. The survey location from 2015-2017 was right at the confluence with the American river. The Cordova Creek II project would add an aditional site at the start of the CCNP.</p>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;resources/images/map.png&quot;</span><span class="p">)</span>
@@ -302,14 +302,14 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/year_1_2_0.png" src="_images/year_1_2_0.png" />
+<img alt="_images/year_1v2_3_0.png" src="_images/year_1v2_3_0.png" />
 </div>
 </div>
 </div>
 <div class="section" id="survey-results">
 <h2>Survey Results<a class="headerlink" href="#survey-results" title="Permalink to this headline">¶</a></h2>
 <p>There were 56 surveys completed between November 2015 and April 2017 (Figure 1). The median survey results was 5 pieces of trash  per meter (pcs/m), the average was 6 pcs/m (Table 1). Plastic comprised 80% of the inventory the next closest were metal and paper <span class="math notranslate nohighlight">\(\approxeq\)</span> 7% (Table 2).</p>
-<p><em><strong>Below:</strong> Left Figure one total survey resulsts</em></p>
+<p><strong>Left Figure 2:</strong> The total for each survey. <strong>Right Figure 3:</strong> The cumlative distribution of the results</p>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># using the server data</span>
@@ -343,6 +343,7 @@
 
 <span class="c1"># daily totals</span>
 <span class="n">dts_date</span> <span class="o">=</span> <span class="n">fd</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;loc_date&quot;</span><span class="p">,</span> <span class="s2">&quot;date&quot;</span><span class="p">],</span> <span class="n">as_index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">pcs_m</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">dts_date</span><span class="p">[</span><span class="s2">&quot;month&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">dts_date</span><span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">month</span><span class="p">)</span>
 
 <span class="c1"># months locator, can be confusing</span>
 <span class="c1"># https://matplotlib.org/stable/api/dates_api.html</span>
@@ -381,10 +382,10 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/year_1_6_0.png" src="_images/year_1_6_0.png" />
+<img alt="_images/year_1v2_7_0.png" src="_images/year_1v2_7_0.png" />
 </div>
 </div>
-<p><em><strong>Below:</strong> Right Table 1 sunmary of survey totals. Left Table 2 material type and totals.</em></p>
+<p><strong>Left Table 1:</strong> Summary of survey results. <strong>Right Table 2:</strong> Material type and totals.</p>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get the basic statistics from pd.describe</span>
@@ -441,14 +442,14 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/year_1_8_0.png" src="_images/year_1_8_0.png" />
+<img alt="_images/year_1v2_9_0.png" src="_images/year_1v2_9_0.png" />
 </div>
 </div>
 </div>
 <div class="section" id="the-most-common-objects">
 <h2>The most common objects<a class="headerlink" href="#the-most-common-objects" title="Permalink to this headline">¶</a></h2>
 <p>Foam polystyrene was the most by quantity however snack wrappers were found at a greater percentage of the surveys. Fractured plastics and polystyrene were found more often than cigarettes  (Table 3),</p>
-<p><em><strong>Below:</strong> The twenty most common items from 2015-2017</em></p>
+<p><strong>Table 3:</strong> The twenty most common items from 2015-2017</p>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># the top 20 codes</span>
@@ -487,15 +488,65 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/year_1_10_0.png" src="_images/year_1_10_0.png" />
+<img alt="_images/year_1v2_11_0.png" src="_images/year_1v2_11_0.png" />
+</div>
+</div>
+<p><strong>Figure 4:</strong> January and February survey results. Samples were collected in 2022, the results were lower than the median  value for those two months (6.25 pcs/m).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># path = &quot;resources/CC_BRC_bag_1.csv&quot;</span>
+
+<span class="k">def</span> <span class="nf">totals</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">anarray</span><span class="p">):</span> 
+    
+    <span class="n">new_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+    
+    
+    
+    <span class="k">if</span> <span class="s2">&quot;cordovacreek&quot;</span> <span class="ow">in</span> <span class="n">new_data</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+        <span class="n">newarray</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">,</span> <span class="s1">&#39;quantity&#39;</span><span class="p">,</span> <span class="s1">&#39;cordovacreek&#39;</span><span class="p">,</span> <span class="s1">&#39;loc_date&#39;</span><span class="p">]</span>
+    
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">newarray</span> <span class="o">=</span> <span class="n">anarray</span>
+        
+    
+    <span class="n">new_data</span><span class="o">=</span> <span class="n">new_data</span><span class="p">[</span><span class="n">newarray</span><span class="p">]</span>
+    
+    <span class="n">nd_total</span> <span class="o">=</span> <span class="n">new_data</span><span class="o">.</span><span class="n">quantity</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    <span class="n">nd_pcsm</span> <span class="o">=</span> <span class="n">nd_total</span><span class="o">/</span><span class="mi">26</span>
+    <span class="k">return</span> <span class="n">nd_total</span><span class="p">,</span> <span class="n">nd_pcsm</span>
+
+<span class="n">paths</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;resources/1_6_22.csv&quot;</span><span class="p">,</span><span class="s2">&quot;resources/02_03_22.csv&quot;</span><span class="p">]</span>
+<span class="n">anarray</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">,</span> <span class="s1">&#39;quantity&#39;</span><span class="p">,</span> <span class="s1">&#39;location&#39;</span><span class="p">,</span> <span class="s1">&#39;loc_date&#39;</span><span class="p">]</span>
+<span class="n">results</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">jan</span><span class="o">=</span><span class="p">(),</span> <span class="n">feb</span><span class="o">=</span><span class="p">())</span>
+
+<span class="n">res</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">paths</span><span class="p">:</span>    
+    <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">totals</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">anarray</span><span class="p">))</span>
+    
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+
+
+<span class="n">sns</span><span class="o">.</span><span class="n">stripplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="n">res</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">res</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]],</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;magenta&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span> <span class="s2">&quot;Jan - Feb 2022&quot;</span><span class="p">)</span>
+<span class="c1"># january february</span>
+<span class="n">jan_feb</span> <span class="o">=</span> <span class="n">dts_date</span><span class="p">[</span><span class="n">dts_date</span><span class="p">[</span><span class="s2">&quot;month&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">])]</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">stripplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">jan_feb</span><span class="p">)),</span> <span class="n">y</span><span class="o">=</span><span class="n">jan_feb</span><span class="p">[</span><span class="s2">&quot;pcs_m&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Jan - Feb 2015-2017&quot;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+<span class="c1"># sns.stripplot(x=np.ones(len(dts_date)), y=dts_date[&quot;pcs_m&quot;].values, color=&quot;black&quot;, alpha=0.5, zorder=0, ax=ax)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;pcs/m&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/year_1v2_13_0.png" src="_images/year_1v2_13_0.png" />
 </div>
 </div>
 </div>
 <div class="section" id="discussion">
 <h2>Discussion<a class="headerlink" href="#discussion" title="Permalink to this headline">¶</a></h2>
-<p>The use of litter data gathered by observations to assess compliance with State Water Resources Control Board resolution 2015-2019 (SWRCB, 2015-0019) was considered by connely et all in 2016. In this study observations were taken from a moving vehichle throughout the city salinas.  The observations were considered using Bayesian uncertaintiy estimation to produce a geographic representation of the magnitude of the observations by some measureing unit. Recently different protocols were considered in the San Francisc bay to qauntify trash in recieveing waters. In the context of (SWRCB, 2015-0019) the presence and the density of litter in recieveing waters is an essential element to understanding and mitigating the problem.</p>
-<p>The goal of monitoring is to assess the changes over time, litter monitoring is one way to accmoplish that goal with respect to (SWRCB, 2015-0019). Litter data gathered by volunteers in Europe over one year was used to establish the current threshhold value of 15 pieces of trash per 100 meters for european beaches. Cordova Creek I (2015 - 2017) had a median value of 5.2 pieces/meter. It is likely that the CCNP had a beneficial effect on the transfer of trash to reciveing waters given that the  samples taken in January and February 2022 were both lower than the baseline in CCI.</p>
-<p>The final phase of CCNP (scheduled 2024-2025) is an opportunity to compare the changes over time in litter density from 2017 - 2022 in the context of the SWRCB, 2015-0019. Furthermore, it is an opportunity to measure beneficial(trash capture) effects of the (CCNP) project design of the confluence both before, and after final phase implementation.</p>
+<p>Cordova Creek I is unique because of the number of samples at one location in a relatively shore period of time. As reference the EU recommends 40 samples over a six year period to establish a baseline using this protocol, there were 56 samples in 18 months at Cordova Creek I. In light of state Water Resources Control Board (RS2015-0019) <a href="#id1"><span class="problematic" id="id2">:cite:`rs20150019`</span></a> the concept of measuring the flow of trash to recieving waters is improtant to determimiing degress of success. This has increased research in the topic. For example, identifying locations in a municpality that may contribute to that flow <a href="#id3"><span class="problematic" id="id4">:cite:`slainas2015`</span></a> or investigating different monitoring techniques <a href="#id5"><span class="problematic" id="id6">:cite:`sfeihale`</span></a> the state of California and stae universities are actively looking for solutions. Replicating the Cordova Creek Project would provide valuable information regarding the real reduction of trash flow before, and after a naturalization project, at present to our knowledge no such study exists.</p>
+<p>The type of object that is found is of interest to those who seek to reduce emissions from storm water systems. Recently the the university of california at riverside produced an application to help standardize the typology of the objects indentified in a survey . According to this study the data produced from Cordova Creek I and eventually Cordova Creek II (JRC) was among the methods with the highest comparability values on average for material and item types. Thus validating the choice of method in 2015 by hammerdirt california and providing a clear path to replicating the project. Results from  surveys in Jan (fig. 4), and Feb 2022 suggests that there may be a measurable decrease of the number of objects per meter or meter squared at the confluence of Cordova Creek and the lower American River, from 2015 - 2022 (before and after the CCNP.</p>
 </div>
 </div>
 
@@ -524,19 +575,12 @@
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="titlepage.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="BRC.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">The Cordova Creek Project</p>
+            <p class="prev-next-title">The Beaver Relief Cleanup</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="BRC.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">The Beaver Relief Cleanup</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
         
