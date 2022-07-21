@@ -31,13 +31,13 @@ from IPython.display import Image
 
 # # Cordova Creek 
 # 
-# Cordova Creek was orginally named Clifton drain which is/was a concrete channel established for evacuating runoff to the American River. The Cordova Creek Naturalization Project (CCNP) started in early 2016 with the goal of restoring natural form and function to a portion of the channelized stream. The naturalized waterway, which provides both critical habitat and water quality benefits, was renamed Cordova Creek. 
+# Cordova Creek was originally named Clifton drain which is/was a concrete channel established for evacuating runoff to the American River. The Cordova Creek Naturalization Project (CCNP) started in early 2016 with the goal of restoring natural form and function to a portion of the channelized stream. The naturalized waterway, which provides both critical habitat and water quality benefits, was renamed Cordova Creek. 
 # 
 # The River Bend Park Area at the time the plan called for the restoration of Cordova Creek to create a riparian corridor that would filter urban runoff and serve as a buffer between the nature study area to the west and the developed recreational uses to the east. It also calls for bringing together native plant nursery, organic farming operations and riparian habitat to enhance interpretation opportunities.
 # 
 # ## Monitoring aquatic litter
 # 
-# In 2015 we began a project with a goal to quantify the debris flowing to the American River and one of its tributaries: Cordova Creek. The surveys followed the protocol described in _The Guide for Monitoriing litter on European seas_ {cite}`mlwguidance`:
+# In 2015 we began a project with a goal to quantify the debris flowing to the American River and one of its tributaries: Cordova Creek. The surveys followed the protocol described in _The Guide for Monitoring litter on European seas_ {cite}`mlwguidance`:
 # 
 # 1. Take pictures of location, including visible debris present
 # 2. Note location, date, length of survey area
@@ -47,9 +47,9 @@ from IPython.display import Image
 # 6. Enter data in the survey app
 # 7. Once all items have been documented dispose, or recycle
 # 
-# Surveys were conducted weekly on Wednesday morninging and anounced via social media in advance. The surveyor maintained a blog with an entry for most surveys [hammerdirt at riverbend](https://hammerdirtriverbend.blogspot.com). 
+# Surveys were conducted weekly on Wednesday morning and announced via social media in advance. The surveyor maintained a blog with an entry for most surveys [hammerdirt at riverbend](https://hammerdirtriverbend.blogspot.com). 
 
-# __Figure 1:__ Aerial image of the CCNP. The survey location from 2015-2017 was right at the confluence with the American river. The Cordova Creek II project would add an aditional site at the start of the CCNP.
+# __Figure 1:__ Aerial image of the CCNP. The survey location from 2015-2017 was right at the confluence with the American river. The Cordova Creek II project would add an additional site at the start of the CCNP.
 
 # In[2]:
 
@@ -59,7 +59,7 @@ Image("resources/images/map.png")
 
 # ## Survey Results 
 
-# There were 56 surveys completed between November 2015 and April 2017 (Figure 1). The median survey results was 5 pieces of trash  per meter (pcs/m), the average was 6 pcs/m (Table 1). Plastic comprised 80% of the inventory the next closest were metal and paper $\approxeq$ 7% (Table 2).
+# There were 56 surveys completed between November 2015 and April 2017 (Figure 1). The median survey results was 5 pieces of trash  per meter (pcs/m), the average was 6 pcs/m (Table 1). Plastic comprised 80% of the inventory the next closest were metal and paper $\approx$ 7% (Table 2).
 
 # __Left Figure 2:__ The total for each survey. __Right Figure 3:__ The cumlative distribution of the results
 

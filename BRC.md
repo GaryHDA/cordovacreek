@@ -21,7 +21,7 @@ One reason for the trash concentration here may be that it is where the concrete
 A "Before" shot of the location in early 2016, as the CC Naturalization project was just underway.
 ```
 
-Within a year after the completion of Phase 2 of the CC Nat project, Nature moved in and began to contribute to the endeaver.
+Within a year after the completion of Phase 2 of the CC Nat project, Nature moved in and began to contribute to the endeavor.
 ```{figure} /resources/images/cldam_3_17_2019.jpg
 :height: 400px
 :name: cldam_3_17_2019
